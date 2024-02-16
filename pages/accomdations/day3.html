@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACCOMDATIONS</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <button class="navbutton laptop"><i class="fa-solid fa-bars"></i></button>
+  <nav dir="rtl" class="lapnav laptop">
+    <div class="logo">
+      <a href="../../">
+        <span>Wissenaire</span>
+        <!-- <i class="fa-solid fa-dice-d20"></i> -->
+      </a>
+    </div>
+    <ul>
+
+      <li><a href="../about_us/">About us</a></li>
+      <li><a href="../under-construction-template-master/index.html">Guests</a></li>
+      <li><a href="../under-construction-template-master/index.html">Exhibits</a></li>
+      <li><a href="../workshops/">Workshops</a></li>
+      <li><a href="../competitions/index.html">Competitions</a></li>
+      <li><a href="../under-construction-template-master/index.html">Initiatives</a></li>
+      <li><a href="../under-construction-template-master/index.html">Highlights</a></a></li>
+      <li><a href="../teampage/">Team</a></li>
+      <li><a href="../under-construction-template-master/index.html">Sponsors</a></li>
+      <li><a href="../reach_Us/">Reach Us</a></li>
+
+    </ul>
+
+  </nav>
+
+  <div style="display: flex;">
+    <div style="left: 0;width: 10vw;">
+      <a class="img" href="../../index.html">
+        <img src="../../imagesnew/wissicon.png" alt=""
+          style="left:5% !important;position: absolute;width:min(10vh,15vw) ; top: 2.5%;">
+      </a>
+    </div>
+    <div class="containerg lap">
+      <div class="bars"></div>
+    </div>
+  </div>
+  <nav class="lap" style="top: 0 !important;width: 100vw;">
+    <div class="close">
+      <div></div>
+    </div>
+    <ul>
+
+      <li><a href="../about_us/">About us</a></li>
+      <li><a href="../under-construction-template-master/index.html">Guests</a></li>
+      <li><a href="../under-construction-template-master/index.html">Exhibits</a></li>
+      <li><a href="../workshops/">Workshops</a></li>
+      <li><a href="../competitions/">Competitions</a></li>
+      <li><a href="../under-construction-template-master/index.html">Initiatives</a></li>
+      <li><a href="../under-construction-template-master/index.html">Highlights</a></a></li>
+      <li><a href="../teampage/">Team</a></li>
+      <li><a href="../under-construction-template-master/index.html">Sponsors</a></li>
+      <li><a href="../reach_Us/">Reach Us</a></li>
+
+    </ul>
+  </nav>
+  <h1 class="singup" id="head" style="display: flex;justify-content: center;text-align: center;">Accomdations &
+    packages
+  </h1>
+  <main>
+    <button class="content">accomidation(non-workshops)
+    </button>
+    <div class="data">
+    </div>
+    <button class="content">accomidation(workshop)
+    </button>
+    <div class="data">
+    </div>
+    <button class="content">Day -2 pass
+    </button>
+    <div class="data">
+    </div>
+    <button class="content">Day -3 pass
+    </button>
+    <div class="data"> </div>
+    <button class="content">food
+    </button>
+    <div class="data"> </div>
+    <button class="content">contact
+    </button>
+    <div class="data"></div>
+  </main>
+  <div class="bigdata"></div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".navToggle6").click(function () {
+        $(".navbar").toggle("slide");
+        $(this).toggleClass("open");
+        $(".background").toggleClass("open");
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      let btns = document.getElementsByClassName('content')
+      let contents = document.getElementsByClassName('data')
+      let bigdata = document.getElementsByClassName("bigdata")
+      let api = [
+        `<b style="color:aqua">Charges for 2 days and 3 nights </b>:<br>
+      Common room- 1049 Rs/-<br>
+      Single room-1449 Rs/-<br>
+      <div class="btn-container">
+      <a href="https://rzp.io/l/W2dayAcc"
+        style="display: flex;justify-content: center;text-decoration: underline;columns: #dadada;">
+          <button class="btn custom-btn btn-5 register">
+            <span style="align-items:center"> click
+        here</span>
+          </button></a>
+        </div>
+        <br><br>
+      <b style="color:aqua">Charges for 3 days and 4 nights</b> :<br>
+      Common room- 1249 Rs/-<br>
+      Single room-1649 Rs/-<br>
+      <div class="btn-container">
+      <a href="https://rzp.io/l/W3daysAcc"
+        style="display: flex;justify-content: center;text-decoration: underline;columns: #dadada;">
+          <button class="btn custom-btn btn-5 register">
+            <span style="align-items:center"> click
+        here</span>
+          </button></a>
+        </div>
+        <br><br>
+      <b>NOTE</b>: Food is not included with this package. During payment, you will be given the choice of a common room or a
+      single room. For food kindly pay separately in food tab.`,
+        ` <b style="margin-bottom: 50px;">THIS IS ONLY FOR WORKSHOP ATTENDIES</b>
+        <br>
+        <br>
+        <b style="color:aqua">Charges for 2 days and 3 nights </b>:<br>
+      Common room- 749 Rs/-<br>
+      Single room-1249 Rs/-<br>
+      <a
+        style="color:aquamarine; display: flex;justify-content: center;text-align:justify;text-decoration: underline;columns: #dadada;">Kindly pay this amount while registering for the workshop itself.</a>
+        <b style="color:aqua">Charges for 3 days and 4 nights </b>:<br>
+      Common room- 1049 Rs/-<br>
+      Single room-1449 Rs/-<br>
+      <div class="btn-container">
+      <a href="https://rzp.io/l/Wworkacc3d"
+        style="display: flex;justify-content: center;text-decoration: underline;">
+          <button class="btn custom-btn btn-5 register">
+            <span style="align-items:center"> click
+        here</span>
+          </button></a>
+        </div>
+        <br><br>
+      <b>NOTE</b>: Food is not included with this package. During payment, you will be given the choice of a common room or a
+      single room. For food kindly pay separately in food tab.`,
+        `
+        <b>prize</b>: 299 Rs
+        <br><br>
+        This package includes entry to all competitions on <b style="color:aqua">March 9th </b> along with 2 informal games and all
+      exhibits. If you would also like accommodations, you can select that option when making your payment
+      <br>
+      <br>
+      <b>Note</b>: A few informal games and free exhibition entry are also included in this package.
+      <br>
+      <br>
+      <div class="btn-container">
+      <a href="https://rzp.io/l/W2daypass"
+        style="display: flex;justify-content: center;text-decoration: underline;columns: #dadada;">
+          <button class="btn custom-btn btn-5 register">
+            <span> click
+        here</span>
+          </button></a>
+        </div>
+      <br>
+      <br>
+      <b>competitions included in this pass are:</b>
+      <div style="display: flex;width: 100%;margin-top:10%">
+        <p style="display: flex;width: 50%;">Drone Challenge</p>
+        <p style="display: flex;width: 50%;">Robo Wars</p>
+      </div>
+      
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;">Auction Wars</p>
+        <p style="display: flex;width: 50%;">Data Detective Challenge</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;"> Quizaire</p>
+        <p style="display: flex;width: 50%;">Biz Pitch</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;"> Truss The Frame</p>
+        <p style="display: flex;width: 50%;">Web Hackathon</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;"> Code Olympics</p>
+        <p style="display: flex;width: 50%;">Vlog Challenge</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;">Shutter</p>
+        <p style="display: flex;width: 50%;">lan wars</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex; width: 50%;">Robo Soccer</p>
+        <p style="display: flex; width: 50%;">ML Hackathon</p>
+      </div>`,
+        `
+        <b>prize</b>: 399 Rs
+        <br><br>
+        This package includes entry to all competitions on <b style="color:aqua">March 10th </b>along with 2 informal games and all
+      exhibits. If you would also like accommodations, you can select that option when making your payment
+      <br>
+      <br>
+      <b>Note</b> This package also includes a <p style="color:aqua"> starnite pass</p>, free entry to the exhibits, and a two informal games.
+      <br>
+      <br>
+      
+      <div class="btn-container">
+      <a href="https://rzp.io/l/W3daypass"
+        style="display: flex;justify-content: center;text-decoration: underline;columns: #dadada;">
+          <button class="btn custom-btn btn-5 register">
+            <span> click
+        here</span>
+          </button></a>
+        </div>
+      <br>
+      <br>
+      <b>competitions included in this pass are:</b>
+      <div style="display: flex;width: 100%;margin-top:10%">
+        <p style="display: flex;width: 50%;">robo race</p>
+        <p style="display: flex;width: 50%;">boat race</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex; width: 50%;">electrical colloquia</p>
+        <p style="display: flex;width: 50%;">civil colloquia</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;">cad modelling</p>
+        <p style="display: flex;width: 50%;">cse colloquia</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;"> mech colloquia</p>
+        <p style="display: flex;width: 50%;">code haston</p>
+      </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;">Web Hackathon</p>
+        <p style="display: flex;width: 50%;"> Code Olympics</p>
+        </div>
+      <div style="display: flex;width: 100%;">
+        <p style="display: flex;width: 50%;">Vlog Challenge</p>
+        <p style="display: flex;width: 50%;">Shutter</p>
+        </div>
+      <div style="display: flex;width: 100%;justify-content:center">
+        <p style="display: flex;width: 50%;">lan wars</p>
+        <p style="display: flex;width: 50%;">Trekkon</p>
+      </div>
+      <div style="display: flex;width: 100%;justify-content:center">
+        <p style="display: flex; width: 50%;">ML Hackathon</p>
+      </div>`, `
+      <b>prize</b>:500 Rs
+      <br><br>
+      -includes breakfast ,lunch and dinner for 2 days
+      <div class="btn-container">
+      <a href="https://rzp.io/l/Wfood"
+        style="display: flex;justify-content: center;text-decoration: underline;columns: #dadada;">
+          <button class="btn custom-btn btn-5 register">
+            <span> click
+        here</span>
+          </button></a>
+        </div>
+      `, `
+      <b>nihal</b>:<br><br><a href="tel:7207846103">+91 7207846103</a><br><br>
+      <a href="mailto:</a><a href="mailto:22ee01050@iitbbs.ac.in">21ee01050@iitbbs.ac.in</a>
+      <br><br>
+      <b>arjun reddy</b>:<br><br><a href="tel:+91 9959551358">+91 9959551458</a><br><br>
+      <a href="mailto:</a><a href="mailto:22ee01011@iitbbs.ac.in">21ee01011@iitbbs.ac.in</a>`
+      ]
+      for (let i = 0; i < btns.length; i++) {
+        contents[i].classList.add("inactive")
+        bigdata[0].classList.add('inactive')
+        bigdata[0].classList.remove("inactive")
+        bigdata[0].innerHTML = api[3]
+        contents[3].classList.remove("inactive")
+        contents[3].innerHTML = api[3]
+        btns[i].addEventListener('click', function () {
+          contents[i].classList.remove("inactive")
+          bigdata[0].classList.remove("inactive")
+          contents[i].innerHTML = api[i]
+          bigdata[0].innerHTML = api[i]
+          for (let j = 0; j < btns.length; j++) {
+            if (i == j) {
+              j++;
+            }
+            contents[j].classList.add("inactive")
+            contents[j].innerHTML = api.inactive;
+          }
+        })
+      }
+      const open = document.querySelector('.containerg');
+      const close = document.querySelector('.close');
+      var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+      open.addEventListener('click', () => {
+        tl.to('nav.lap ul', { transform: 'scale(1)' }, '-=1.9')
+          .to('nav.lap', { background: 'black' }, '-=1.9')
+          .to('nav.lap', { width: '100vw' }, '-=1.8')
+          .to('nav.lap', { height: '100vh' }, '-=0.5')
+          .to('nav.lap ul li ', { display: 'block' }, '+=.1')
+          .to('nav.lap ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=1.7')
+          .to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.1")
+
+      });
+
+      close.addEventListener('click', () => {
+        tl
+          .to('nav.lap ul li a', { opacity: 0, pointerEvents: 'all', stagger: .2 }, '-=4.1')
+          .to('.close', { opacity: 0, pointerEvents: 'all' }, "=.8")
+          .to('nav.lap ul li ', { display: 'none' }, '-=.1')
+          .to('nav.lap', { height: '30px' }, '-=2.1')
+          .to('nav.lap', { width: '100vw' })
+          .to('nav.lap', { background: 'transparent' }, '-=1.9')
+      });
+    });
+
+  </script>
+
+  <script>
+    const nav = document.querySelector('nav');
+    const btn = document.querySelector('button');
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      btn.classList.toggle('active');
+    })
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+</body>
+
+</html>
