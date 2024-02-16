@@ -229,6 +229,11 @@ main {
   }
   .data {
     font-size: 1.5vh;
+    >div.lvl{
+      flex-direction: column;
+      >b{
+      color: aquamarine;
+    }}
     > b {
       color: aquamarine;
     }
