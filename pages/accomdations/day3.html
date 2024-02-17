@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACCOMDATIONS</title>
+  <title>Wissenaire'24 |Accommodation</title>
   <link rel="stylesheet" href="./style.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -69,14 +69,14 @@
     </ul>
   </nav>
   <h1 class="singup" id="head" style="display: flex;justify-content: center;text-align: center;">Accomdations &
-    packages
+    Passes
   </h1>
   <main>
-    <button class="content">accomidation(non-workshops)
+    <button class="content">accommodation(non-workshops)
     </button>
     <div class="data">
     </div>
-    <button class="content">accomidation(workshop)
+    <button class="content">accommodation(workshop)
     </button>
     <div class="data">
     </div>
@@ -111,9 +111,20 @@
       let contents = document.getElementsByClassName('data')
       let bigdata = document.getElementsByClassName("bigdata")
       let api = [
-        `<b style="color:aqua">Charges for 2 days and 3 nights </b>:<br>
-      Common room- 1049 Rs/-<br>
-      Single room-1449 Rs/-<br>
+        `
+      <ul>
+        <li>Includes STARNITE pass.</li>
+        <li>Free Merchandise of Wissenaire’24.</li>
+        <li>Includes Day-2 and Day-3 Events & Competitions pass.</li>
+        <li>Free access to all the exhibits.</li>
+        <li>Free access to few informal games.</li>
+      </ul>
+      <br>
+      <br>
+      <div class="lvl" style="display:flex"><div>
+      <b style="color:aqua">Charges for 2 days and 3 nights </b>:<br>
+      Common room- 1249 Rs/-<br>
+      Single room-1649 Rs/-<br></div>
       <div class="btn-container">
       <a href="https://rzp.io/l/W2dayAcc"
         style="display: flex;justify-content: center;text-decoration: underline;columns: #dadada;">
@@ -122,10 +133,12 @@
         here</span>
           </button></a>
         </div>
+        </div>
         <br><br>
+      <div class="lvl" style="display:flex"><div>
       <b style="color:aqua">Charges for 3 days and 4 nights</b> :<br>
-      Common room- 1249 Rs/-<br>
-      Single room-1649 Rs/-<br>
+      Common room- 1449 Rs/-<br>
+      Single room-1849 Rs/-<br></div>
       <div class="btn-container">
       <a href="https://rzp.io/l/W3daysAcc"
         style="display: flex;justify-content: center;text-decoration: underline;columns: #dadada;">
@@ -133,21 +146,37 @@
             <span style="align-items:center"> click
         here</span>
           </button></a>
-        </div>
+        </div></div>
         <br><br>
-      <b>NOTE</b>: Food is not included with this package. During payment, you will be given the choice of a common room or a
-      single room. For food kindly pay separately in food tab.`,
+      <b>NOTE</b>:<br>1. Extra charges of Rs.250 for food per day (Includes breakfast, lunch &
+dinner) should be paid separately prior to visiting campus if required.<br>
+2. In Single rooms a maximum of 2 members will be accommodated.<br>
+3. In Common rooms a maximum of 12 members will be accommodated.`,
         ` <b style="margin-bottom: 50px;">THIS IS ONLY FOR WORKSHOP ATTENDIES</b>
         <br>
         <br>
+      <ul>
+        <li>Includes STARNITE pass.</li>
+        <li>Includes Day-2 and Day-3 Events & Competitions pass.</li>
+        <li>Free access to all the exhibits.</li>
+        <li>Free access to few informal games.</li>
+      </ul><br>
+      <div class="lvl" style="display:flex"><div>
         <b style="color:aqua">Charges for 2 days and 3 nights </b>:<br>
       Common room- 749 Rs/-<br>
-      Single room-1249 Rs/-<br>
-      <a
-        style="color:aquamarine; display: flex;justify-content: center;text-align:justify;text-decoration: underline;columns: #dadada;">Kindly pay this amount while registering for the workshop itself.</a>
-        <b style="color:aqua">Charges for 3 days and 4 nights </b>:<br>
+      Single room-1249 Rs/-<br><br></div>
+      <div class="btn-container">
+      <a href="https://rzp.io/l/W2dayworkacc"
+        style="display: flex;justify-content: center;text-decoration: underline;">
+          <button class="btn custom-btn btn-5 register">
+            <span style="align-items:center"> click
+        here</span>
+          </button></a>
+        </div></div>
+      <br><br>
+      <div class="lvl" style="display:flex"><div><b style="color:aqua">Charges for 3 days and 4 nights </b>:<br>
       Common room- 1049 Rs/-<br>
-      Single room-1449 Rs/-<br>
+      Single room-1449 Rs/-<br></div>
       <div class="btn-container">
       <a href="https://rzp.io/l/Wworkacc3d"
         style="display: flex;justify-content: center;text-decoration: underline;">
@@ -155,10 +184,12 @@
             <span style="align-items:center"> click
         here</span>
           </button></a>
-        </div>
+        </div></div>
         <br><br>
-      <b>NOTE</b>: Food is not included with this package. During payment, you will be given the choice of a common room or a
-      single room. For food kindly pay separately in food tab.`,
+      <b>NOTE</b>:<br>1. Extra charges of Rs.250 for food per day (Includes breakfast, lunch &
+dinner) should be paid separately prior to visiting campus if required.<br>
+2. In Single rooms a maximum of 2 members will be accommodated.<br>
+3. In Common rooms a maximum of 12 members will be accommodated.`,
         `
         <b>prize</b>: 299 Rs
         <br><br>
@@ -207,8 +238,14 @@
       </div>
       <div style="display: flex;width: 100%;">
         <p style="display: flex; width: 50%;">Robo Soccer</p>
-        <p style="display: flex; width: 50%;">ML Hackathon</p>
-      </div>`,
+        <p style="display: flex; width: 50%;">ML competetions</p>
+      </div><br><br>
+      <b>note</b><br>:1. Passes are mandatory for all those who did not apply for any
+workshops or accommodation.<br>2. Day 2 pass includes entry to all competitions on March 9th along with
+few informal games and all exhibits.
+
+
+      `,
         `
         <b>prize</b>: 399 Rs
         <br><br>
@@ -258,10 +295,12 @@
       <div style="display: flex;width: 100%;justify-content:center">
         <p style="display: flex;width: 50%;">lan wars</p>
         <p style="display: flex;width: 50%;">Trekkon</p>
-      </div>
-      <div style="display: flex;width: 100%;justify-content:center">
-        <p style="display: flex; width: 50%;">ML Hackathon</p>
-      </div>`, `
+      </div><br><br>
+      <b>note</b>:<br>1. Passes are mandatory for all those who did not apply for any
+workshops or accommodation.<br>2. Day 3 pass includes entry to STARNITE, all competitions on March 10th
+along with few informal games and all exhibits.
+
+`, `
       <b>prize</b>:500 Rs
       <br><br>
       -includes breakfast ,lunch and dinner for 2 days
