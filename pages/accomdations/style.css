@@ -193,7 +193,7 @@ main {
   width: auto;
   font-size: 15px;
   padding: min(20px, 3.5%) min(35px, 7.5%);
-  border: solid magenta;
+  border: solid #5EEFFE;
   margin: 15px 0;
   color: #e5e5e5;
 }
@@ -206,7 +206,7 @@ main {
 .bigdata {
   text-align: justify;
   background: transparent;
-  border: solid magenta 5px;
+  border: solid #5EEFFEaa 5px;
   color: #e5e5e5;
   padding: 5%;
   width: 70%;
