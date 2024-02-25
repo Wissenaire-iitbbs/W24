@@ -482,7 +482,7 @@ button.register:hover {
 }
 
 .morph {
-  @media screen and(max-width:1000px) {
-    flex-direction: column;
+  @media (max-width:1000px) {
+    flex-direction: column !important;
   }
 }
