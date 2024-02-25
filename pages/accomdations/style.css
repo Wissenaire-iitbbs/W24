@@ -148,6 +148,9 @@ nav.lap .close:hover div::after {
   .laptop {
     display: none;
   }
+  .morph {
+    flex-direction: column !important;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -479,10 +482,4 @@ button.register:hover {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-}
-
-.morph {
-  @media (max-width:1000px) {
-    flex-direction: column !important;
-  }
 }
