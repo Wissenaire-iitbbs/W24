@@ -60,8 +60,7 @@ h1 {
 
 nav.lap {
   font-family: "lemon milk";
-  z-index: 99;
-  font-size: 2vh;
+  z-index: 999;
   position: fixed;
   top: 0;
   padding: 0 !important;
@@ -83,12 +82,13 @@ nav.lap ul {
 nav.lap ul li {
   padding: 0;
   text-align: left;
-  margin: 20px 0;
+  margin: 12.5px 0;
 }
 
 nav.lap ul li a {
+  text-transform: uppercase;
   color: #fff;
-  font-size: 3.75vh !important;
+  font-size: 3vh !important;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -102,6 +102,7 @@ nav.lap ul li a:after {
   position: absolute;
   height: 3px;
   border-radius: 5px;
+  background: #fff;
   bottom: -10px;
   left: 0;
   transform-origin: left;
@@ -124,14 +125,23 @@ nav.lap .close {
   pointer-events: none;
 }
 
+nav.lap h2 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  opacity: 0;
+  pointer-events: none;
+  color: #fff;
+  font-size: 2em;
+}
 
 nav.lap .close div::before,
 nav.lap .close div::after {
-  background: white;
   content: "";
   position: absolute;
   width: 30px;
   height: 4px;
+  background: #fff;
   transition: background 0.5s ease;
 }
 nav.lap .close div::before {
@@ -146,7 +156,6 @@ nav.lap .close:hover div::before,
 nav.lap .close:hover div::after {
   background: rgb(209, 3, 3);
 }
-
 @media screen and (max-width: 1000px) {
   .laptop {
     display: none;

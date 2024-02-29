@@ -99,13 +99,13 @@ nav.lap ul {
 nav.lap ul li {
   padding: 0;
   text-align: left;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 nav.lap ul li a {
   text-transform: uppercase;
   color: #fff;
-  font-size: 3.75vh !important;
+  font-size: 3vh !important;
   text-decoration: none;
   font-weight: 500;
   position: relative;

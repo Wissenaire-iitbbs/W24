@@ -66,12 +66,12 @@ nav.lap ul {
 nav.lap ul li {
   padding: 0;
   text-align: left;
-  margin: 20px 0;
+  margin: 17px 0;
 }
 
 nav.lap ul li a {
   font-family: "lemon milk" !important;
-  font-size: 1em;
+  font-size: 3vh !important;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
