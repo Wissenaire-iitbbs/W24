@@ -1,4 +1,4 @@
-window.location.href = "../coming_soon";
+/*window.location.href = "../coming_soon";*/
 const handleButtonClick = (card, buttons, sections) => (e) => {
   const targetSection = e.target.getAttribute("data-section");
   const section = document.querySelector(targetSection);
