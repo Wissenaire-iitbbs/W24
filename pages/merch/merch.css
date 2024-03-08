@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 15%;
+  margin-bottom: 2%;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+body {
+  background-image: url("./finsl.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  margin-bottom: 3%;
+  background-color: #17242e;
+  opacity: 1;
+}
+
+.merch-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.sec {
+  width: 70vw;
+  aspect-ratio: 1.7/2.4;
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+}
+
+.tem {
+    width: 30vw;
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+}
